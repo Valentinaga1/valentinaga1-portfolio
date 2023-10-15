@@ -1,0 +1,141 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header__navbar {
+  background-color: #ffc448;
+  /* background-color: rgba(255,246,217,.4); */
+
+  height: 200px;
+}
+
+.main {
+  padding: 1rem 15rem 2rem;
+  max-height: 600px;
+}
+
+.header__main-img-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 8rem;
+}
+
+.header__main-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 8rem;
+}
+
+.header__main-title-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 10rem;
+  text-align: center;
+}
+
+.header__main-title{
+  color: #646464;
+  width: 80%;
+}
+
+.header__main-sentences-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 13rem;
+}
+
+.header__main-sentences-parragraph {
+  color: #646464;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #212121;
+  animation: cursor 1s step-start infinite, 
+    text 5s steps(18) alternate infinite;
+}
+
+.header__main-btn-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 13rem;
+
+}
+
+.header__footer {
+  margin-top: -10rem;
+  margin-bottom: 1rem;
+  
+}
+
+
+@keyframes cursor {
+  0%, 100% { 
+    border-color: #212121; 
+  }
+}
+
+@keyframes text {
+  0% { 
+    width: 0; 
+  }
+  100% { 
+    width: 21.5ch; 
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .main {
+    padding: 0 0;
+    max-height: 450px;
+  }
+  .header__main-title{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 381px) and (max-width: 500px) {
+  .main {
+    padding: 0 0rem;
+    max-height: 540px;
+  }
+  .header__main-title{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 630px) {
+  .main {
+    padding: 0 1.5rem;
+  }
+  .header__main-title{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 631px) and (max-width: 788px) {
+  .main {
+    max-height: 470px;
+    padding: 0 5rem
+  }
+  .header__main-title{
+    width: 100%;
+  }
+
+}
+@media screen and (min-width: 789px) and (max-width: 1024px) {
+  .main {
+    padding: 0 7rem;
+  }
+  .header__main-title{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .main {
+    padding: 0 12rem;
+  }
+  .header__main-title{
+    width: 100%;
+  }
+}

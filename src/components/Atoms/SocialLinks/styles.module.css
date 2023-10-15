@@ -1,0 +1,14 @@
+.header__main-fi-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header__main-fi {
+  color: #6244c5;
+  margin-left: 1rem;
+  transition: transform 0.3s ease-out;
+}
+
+.header__main-fi:hover {
+    transform: scale(1.1);
+}

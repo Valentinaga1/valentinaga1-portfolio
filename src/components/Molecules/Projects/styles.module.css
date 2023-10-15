@@ -1,0 +1,109 @@
+.projects__main {
+  background-color: #6244c5;
+  padding: 1rem 12rem 2rem;
+}
+
+.projects__title {
+  color: white;
+  text-align: center;
+}
+
+.projects__parragraph, .projects__item-description {
+  font-size: 1rem;
+  color: hsla(0,0%,100%,.7);
+  line-height: 32px;
+  text-align: center;
+}
+
+.projects__item-description {
+  text-align: justify;
+
+}
+
+.projects__list-items-container {
+ 
+}
+
+.projects__item-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.projects__item-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects__item-text, .projects__item-image {
+  padding: 0rem 4.5rem 2rem;
+}
+
+.projects__item-title {
+  font-size: 1.3rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+}
+
+.projects__item-btns-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 380px) {
+  .projects__main {
+    padding: 1rem 3rem 2rem;
+  }
+  .projects__item-container {
+    grid-template-columns: 1fr;
+  }
+  .projects__item-text, .projects__item-image {
+    padding: 0rem 1rem 2rem;
+  }
+  .projects__item-btns-container {
+    display: block;
+  }
+}
+@media screen and (min-width: 381px) and (max-width: 768px) {
+  .projects__main {
+    padding: 1rem 4.5rem 2rem;
+  }
+  .projects__item-container {
+    grid-template-columns: 1fr;
+  }
+  .projects__item-text, .projects__item-image {
+    padding: 0rem 2rem 2rem;
+  }
+  .projects__item-btns-container {
+    display: block;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .projects__main {
+    padding: 1rem 2.5rem 2rem;
+  }
+
+  .projects__item-text, .projects__item-image {
+    padding: 0rem 2rem 2rem;
+  }
+  .projects__item-btns-container {
+    display: block;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .projects__main {
+    padding: 1rem 3rem 2rem;
+  }
+
+  .projects__item-text, .projects__item-image {
+    padding: 0rem 3rem 2rem;
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 1400px) {
+  .projects__main {
+    padding: 1rem 8rem 2rem;
+  }
+}

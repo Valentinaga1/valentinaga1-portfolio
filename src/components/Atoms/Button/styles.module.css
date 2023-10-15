@@ -1,0 +1,40 @@
+.btn__container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 13rem;
+}
+
+.btn__container-parent {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease-out;
+}
+
+.btn__label:hover, .btn__label-parent:hover{
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
+  transform: scale(1.1);
+}
+
+.btn__label, .btn__label-parent {
+  color: #fbfbfb;
+  background-color: #6244c5;
+  text-transform: uppercase;
+  border: 2px solid #6244c5;
+  border-radius: 50px;
+  font-size: 1em;
+  line-height: normal;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out, color 0.2s 0.3s;
+  letter-spacing: 0;
+  height: auto;
+  padding: 0.8em 2.1em;
+  cursor: pointer;
+}
+
+.btn__label-parent {
+  background-color: white;
+  color: #6244c5;
+}
