@@ -1,22 +1,16 @@
 .footer__main {
   padding: 1rem 12rem 2rem;
   background-color: #ffc448;
-  /* height: 260px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .footer__initials-container {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   color: #fff;
 }
 
 .footer__initials {
-  /* width: 4rem; */
-  /* height: 4rem; */
   background-color: #6244c5;
   border-radius: 50%;
   text-align: center;
