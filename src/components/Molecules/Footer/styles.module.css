@@ -30,3 +30,30 @@
   text-align: center;
   font-size: 1.3rem;
 }
+
+@media screen and (max-width: 380px) {
+  .footer__main {
+    padding: 1rem 9rem 2rem;
+    display: block;
+    justify-content: center;
+  }
+
+}
+@media screen and (min-width: 381px) and (max-width: 500px) {
+  .footer__main {
+    padding: 1rem 10rem 2rem;
+    display: block;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .footer__parragraph-container{
+    display: block;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+}

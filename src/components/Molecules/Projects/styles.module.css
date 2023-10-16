@@ -30,13 +30,13 @@
   grid-gap: 1rem;
 }
 
-.projects__item-image {
+.projects__item-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.projects__item-text, .projects__item-image {
+.projects__item-text, .projects__item-image-container {
   padding: 0rem 4.5rem 2rem;
 }
 
@@ -55,12 +55,16 @@
 
 @media screen and (max-width: 380px) {
   .projects__main {
-    padding: 1rem 3rem 2rem;
+    padding: 1rem 1.5rem 2rem;
   }
   .projects__item-container {
     grid-template-columns: 1fr;
   }
-  .projects__item-text, .projects__item-image {
+  .projects__item-image{
+    width: 200px;
+    height: 200px;
+  }
+  .projects__item-text, .projects__item-image-container {
     padding: 0rem 1rem 2rem;
   }
   .projects__item-btns-container {
@@ -69,12 +73,16 @@
 }
 @media screen and (min-width: 381px) and (max-width: 768px) {
   .projects__main {
-    padding: 1rem 4.5rem 2rem;
+    padding: 1rem 2.5rem 2rem;
   }
   .projects__item-container {
     grid-template-columns: 1fr;
   }
-  .projects__item-text, .projects__item-image {
+  .projects__item-image{
+    width: 230px;
+    height: 230px;
+  }
+  .projects__item-text, .projects__item-image-container {
     padding: 0rem 2rem 2rem;
   }
   .projects__item-btns-container {
@@ -83,10 +91,13 @@
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .projects__main {
-    padding: 1rem 2.5rem 2rem;
+    padding: 1rem 2rem 2rem;
   }
-
-  .projects__item-text, .projects__item-image {
+  .projects__item-image{
+    width: 300px;
+    height: 300px;
+  }
+  .projects__item-text, .projects__item-image-container {
     padding: 0rem 2rem 2rem;
   }
   .projects__item-btns-container {
@@ -98,7 +109,7 @@
     padding: 1rem 3rem 2rem;
   }
 
-  .projects__item-text, .projects__item-image {
+  .projects__item-text, .projects__item-image-container {
     padding: 0rem 3rem 2rem;
   }
 }

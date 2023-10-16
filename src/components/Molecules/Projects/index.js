@@ -46,8 +46,8 @@ const Projects = () => {
           <div key={project.id} className={styles["projects__item-container"]}>
             {(index + 1) % 2 === 0 && windowSize.width > 769 ? (
               <>
-                <div className={styles["projects__item-image"]}>
-                  <Image src={project.img} alt="Image project" width={windowSize.width < 500 ? 200 : 350} height={windowSize.width < 500 ? 200 :250}/>
+                <div className={styles["projects__item-image-container"]}>
+                  <Image className={styles["projects__item-image"]} src={project.img} alt="Image project" width={windowSize.width < 500 ? 100 : 350} height={windowSize.width < 500 ? 100 :250}/>
                 </div>
                 <div className={styles["projects__item-text"]}>
                   <h6 className={styles["projects__item-title"]}>
@@ -84,8 +84,8 @@ const Projects = () => {
                     </a>
                   </div>
                 </div>
-                <div className={styles["projects__item-image"]}>
-                  <Image src={project.img} alt="Image project" width={windowSize.width < 500 ? 200 : 350} height={windowSize.width < 500 ? 200 :250}/>
+                <div className={styles["projects__item-image-container"]}>
+                  <Image className={styles["projects__item-image"]} src={project.img} alt="Image project" width={windowSize.width < 500 ? 100 : 350} height={windowSize.width < 500 ? 100 :250}/>
                 </div>
               </>
             )}
