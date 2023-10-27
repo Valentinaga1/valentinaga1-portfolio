@@ -10,11 +10,16 @@ import Navbar from '@/components/Molecules/Navbar'
 
 
 export default function Home() {
-
+  const scrollToSection = () => {
+    const targetSection = document.getElementById('contact');
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <>
       <Navbar id="home"/>
-      <Hero id="home"/>
+      <Hero id="home" scrollToSection={scrollToSection}/>
       <About id="about"/>
       <Skills id="skills"/>
       <Projects id="projects"/> 

@@ -90,7 +90,7 @@
     height: 230px;
   }
   .projects__item-text, .projects__item-image-container {
-    padding: 0rem 2rem 2rem;
+    padding: 0rem 1rem 2rem;
   }
   .projects__item-btns-container {
     display: block;

@@ -9,7 +9,7 @@ import SocialLinks from '@/components/Atoms/SocialLinks';
 import Button from '@/components/Atoms/Button';
 
 
-const Hero = () => {
+const Hero = ( {scrollToSection}) => {
   const [sentence, setSentence] = useState("");
   const sentences = [
   `a full stack developer💻`,
@@ -48,7 +48,9 @@ const Hero = () => {
            <div className={styles["header__main-sentences-container"]}>
             <p className={styles["header__main-sentences-parragraph"]} id="typewriter">{sentence}</p>
           </div>
-          <Button label={`Let's Talk!`} />
+          <div onClick={scrollToSection}>
+            <Button label={`Let's Talk!`} />
+          </div>
         </div>
       </main>
       <div className={styles["header__footer"]}>
