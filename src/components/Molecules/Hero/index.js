@@ -12,10 +12,9 @@ import Button from '@/components/Atoms/Button';
 const Hero = () => {
   const [sentence, setSentence] = useState("");
   const sentences = [
-  `am a full stack developer💻`,
-  `am a blockchain developer enthusiast🔗`,
-  `am a coffee lover☕`,
-  `am roller skater🛼`
+  `a full stack developer💻`,
+  `a blockchain developer enthusiast🔗`,
+  `a coffee lover☕`,
   ];
   let currentSentenceIndex = 0;
   
@@ -44,7 +43,7 @@ const Hero = () => {
             <Image className={styles["header__main-img"]} src={headerImage} alt=""/>
           </div>
          <div className={styles["header__main-title-container"]}>
-            <h2 className={styles["header__main-title"]}>Hi! I am Valentina👋 Nice to meet you. I ...</h2>
+            <h2 className={styles["header__main-title"]}>Hi! I am Valentina👋 Nice to meet you. I am...</h2>
           </div>
            <div className={styles["header__main-sentences-container"]}>
             <p className={styles["header__main-sentences-parragraph"]} id="typewriter">{sentence}</p>

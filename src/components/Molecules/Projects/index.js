@@ -37,60 +37,62 @@ const Projects = () => {
   console.log("windowSize", windowSize);
   return (
     <div className={styles["projects__main"]} id="projects">
-      <h2 className={styles["projects__title"]}>Projects</h2>
-      <p className={styles["projects__parragraph"]}>
-        Here are few projects that I have wroked on
-      </p>
-      <div className={styles["projects__list-items-container"]}>
-        {projects.map((project, index) => (
-          <div key={project.id} className={styles["projects__item-container"]}>
-            {(index + 1) % 2 === 0 && windowSize.width > 769 ? (
-              <>
-                <div className={styles["projects__item-image-container"]}>
-                  <Image className={styles["projects__item-image"]} src={project.img} alt="Image project" width={windowSize.width < 500 ? 100 : 350} height={windowSize.width < 500 ? 100 :250}/>
-                </div>
-                <div className={styles["projects__item-text"]}>
-                  <h6 className={styles["projects__item-title"]}>
-                    {project.title}
-                  </h6>
-                  <p className={styles["projects__item-description"]}>
-                    {project.description}
-                  </p>
-                  <div className={styles["projects__item-btns-container"]}>
-                    <a href={project.webPageUrl} target="_blank">
-                      <Button label={"Visit site"} isAboutParent={true} />
-                    </a>
-                    <a href={project.gitHubUrl} target="_blank">
-                      <Button label={"Visit repo"} isAboutParent={true} />
-                    </a>
+      <div className={styles["projects__main-container"]}>
+        <h2 className={styles["projects__title"]}>Projects</h2>
+        <p className={styles["projects__parragraph"]}>
+          Here are few projects that I have wroked on
+        </p>
+        <div className={styles["projects__list-items-container"]}>
+          {projects.map((project, index) => (
+            <div key={project.id} className={styles["projects__item-container"]}>
+              {(index + 1) % 2 === 0 && windowSize.width > 769 ? (
+                <>
+                  <div className={styles["projects__item-image-container"]}>
+                    <Image className={styles["projects__item-image"]} src={project.img} alt="Image project" width={windowSize.width < 500 ? 100 : 350} height={windowSize.width < 500 ? 100 :250}/>
                   </div>
-                </div>
-              </>
-            ) : (
-              <>
-                <div className={styles["projects__item-text"]}>
-                  <h6 className={styles["projects__item-title"]}>
-                    {project.title}
-                  </h6>
-                  <p className={styles["projects__item-description"]}>
-                    {project.description}
-                  </p>
-                  <div className={styles["projects__item-btns-container"]}>
-                    <a href={project.webPageUrl} target="_blank">
-                      <Button label={"Visit site"} isAboutParent={true} />
-                    </a>
-                    <a href={project.gitHubUrl} target="_blank">
-                      <Button label={"Visit repo"} isAboutParent={true} />
-                    </a>
+                  <div className={styles["projects__item-text"]}>
+                    <h6 className={styles["projects__item-title"]}>
+                      {project.title}
+                    </h6>
+                    <p className={styles["projects__item-description"]}>
+                      {project.description}
+                    </p>
+                    <div className={styles["projects__item-btns-container"]}>
+                      <a href={project.webPageUrl} target="_blank">
+                        <Button label={"Visit site"} isAboutParent={true} />
+                      </a>
+                      <a href={project.gitHubUrl} target="_blank">
+                        <Button label={"Visit repo"} isAboutParent={true} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className={styles["projects__item-image-container"]}>
-                  <Image className={styles["projects__item-image"]} src={project.img} alt="Image project" width={windowSize.width < 500 ? 100 : 350} height={windowSize.width < 500 ? 100 :250}/>
-                </div>
-              </>
-            )}
-          </div>
-        ))}
+                </>
+              ) : (
+                <>
+                  <div className={styles["projects__item-text"]}>
+                    <h6 className={styles["projects__item-title"]}>
+                      {project.title}
+                    </h6>
+                    <p className={styles["projects__item-description"]}>
+                      {project.description}
+                    </p>
+                    <div className={styles["projects__item-btns-container"]}>
+                      <a href={project.webPageUrl} target="_blank">
+                        <Button label={"Visit site"} isAboutParent={true} />
+                      </a>
+                      <a href={project.gitHubUrl} target="_blank">
+                        <Button label={"Visit repo"} isAboutParent={true} />
+                      </a>
+                    </div>
+                  </div>
+                  <div className={styles["projects__item-image-container"]}>
+                    <Image className={styles["projects__item-image"]} src={project.img} alt="Image project" width={windowSize.width < 500 ? 100 : 350} height={windowSize.width < 500 ? 100 :250}/>
+                  </div>
+                </>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

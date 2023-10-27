@@ -14,16 +14,18 @@ const About = () => {
         <h2 className={styles["about__tile"]}>About me!</h2>
       </div>
       <div className={styles["about__columns"]}>
-        <div className={styles["about__img-container"]}>
-          <Image className={styles["about__img"]} src={aboutMe} alt="About image" width={300} height={430}/>
-        </div>
-        <div>
-          <div className={styles["about__text-container"]}>
-            <p className={styles["about__text-parragraph"]}>{`I'm Valentina, originally a financial engineer, who transitioned into software development. Over the past two years, I've focused on web2 technologies like Next.js, GraphQL, ReactJS, and MongoDB. This journey has enabled me to create interactive website features, merging analytical rigor from my financial background with forward-thinking software solutions.`}</p>
-            <p className={styles["about__text-parragraph"]}>{`Beyond the tech, I enjoy thins like traveling and roller skatings, and also I have a deep love for coffee. Recently, I ventured into web3 and blockchain through training at the Polkadot Blockchain Academy. I acquired essential skills for this revolutionary domain, including Substrate, FRAME, Polkadot, and smart contracts. With my financial, engineering, web development experience, and emerging blockchain knowledge, I'm eager to contribute and innovate in this dynamic space.`}</p>
-            <a href={cvUrl} download="Cv-ValentinaGómezAgudelo.pdf" title="CV">
-              <Button label={`Download CV`} isAboutParent={true}/>  
-             </a>
+        <div className={styles["about__columns-container"]}>
+          <div className={styles["about__img-container"]}>
+            <Image className={styles["about__img"]} src={aboutMe} alt="About image" width={300} height={350}/>
+          </div>
+          <div>
+            <div className={styles["about__text-container"]}>
+              <p className={styles["about__text-parragraph"]}>{`I'm Valentina, originally a financial engineer, who transitioned into software development. Over the past two years, I've focused on web2 technologies like Next.js, GraphQL, ReactJS, and MongoDB. This journey has enabled me to create interactive website features, merging analytical rigor from my financial background with forward-thinking software solutions.`}</p>
+              <p className={styles["about__text-parragraph"]}>{`Beyond the tech, I enjoy thins like traveling and roller skatings, and also I have a deep love for coffee. Recently, I ventured into web3 and blockchain through training at the Polkadot Blockchain Academy. I acquired essential skills for this revolutionary domain, including Substrate, FRAME, Polkadot, and smart contracts. With my financial, engineering, web development experience, and emerging blockchain knowledge, I'm eager to contribute and innovate in this dynamic space.`}</p>
+              <a href={cvUrl} download="Cv-ValentinaGómezAgudelo.pdf" title="CV">
+                <Button label={`Download CV`} isAboutParent={true}/>  
+              </a>
+            </div>
           </div>
         </div>
         <svg className={styles["contact__background-details-2"]} width="73" height="70" viewBox="0 0 73 70" fill="none" xmlns="http://www.w3.org/2000/svg" id="null" class="svg replaced-svg">

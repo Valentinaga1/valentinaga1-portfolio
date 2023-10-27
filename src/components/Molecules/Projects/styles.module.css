@@ -1,6 +1,13 @@
 .projects__main {
   background-color: #6244c5;
   padding: 1rem 12rem 2rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.projects__main-container {
+  max-width: 1225px;
 }
 
 .projects__title {
@@ -27,7 +34,7 @@
 .projects__item-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
 }
 
 .projects__item-image-container {

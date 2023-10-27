@@ -1,6 +1,12 @@
 .blog__main{
   padding: 1rem 12rem 2rem;
   position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.blog__main-container {
+  max-width: 1300px;
 }
 
 .blog__title {
@@ -68,7 +74,7 @@
 .blog__item-image-background {
   position: relative;
   z-index: -1;
-  left: 3rem;
+  left: 2rem;
 }
 
 

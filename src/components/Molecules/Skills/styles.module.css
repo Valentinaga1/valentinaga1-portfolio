@@ -1,5 +1,7 @@
 .skills__main {
   padding: 1rem 12rem 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .skills__title-container {
